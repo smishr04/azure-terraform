@@ -9,11 +9,8 @@ variable "web_server_address_prefix" {}
 
 provider "azurerm" {
 
-//version          = "1.16"
-client_id        = "03cf234a-5509-4072-b7fd-9348c58668ba"
-client_secret    = "dy8x1fK9/SfdfqnCIvNm3nIrONuASX7+GSBxpdEEt3w="
-tenant_id        = "bdef22b4-542e-46fa-9a31-48175f43972b"
-subscription_id  = "4dcb109e-225b-4b51-b9d5-6c542a6d1f2e"
+version          = "1.20.0"
+
 }
 
 resource "azurerm_resource_group" "web_server_rg" {
