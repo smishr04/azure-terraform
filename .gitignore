@@ -1,0 +1,4 @@
+login.cmd
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
