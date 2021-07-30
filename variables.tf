@@ -1,25 +1,30 @@
-
-variable "server_name" {
-  default = "web-server"
+variable "business_unit" {
+  description = "Business Unit Name"
+  type        = string
 }
 
-variable "locations" {
-  type    = "map"
-  default = {
-    location1 = "westus2"
-    location2 = "westeurope"
-  }
+variable "environment" {
+  description = "Environment Name"
+  type        = string
 }
 
-variable "subnets" {
-  type    = "list"
-  default = ["10.0.1.10","10.0.1.11"]
+variable "resoure_group_name" {
+  description = "Resource Group Name"
+  type        = string
 }
 
-variable "live" {
-  type    = "string"
-  default = false
+variable "resoure_group_location" {
+  description = "Resource Group Location"
+  type        = string
+
 }
 
-//
-//az account list-locations -o table
+variable "vm_username" {
+  description = "username of the VM"
+  sensitive   = true
+}
+
+variable "vm_password" {
+  description = "password of the VM"
+  sensitive   = true
+}
