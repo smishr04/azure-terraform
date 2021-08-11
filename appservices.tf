@@ -22,4 +22,5 @@ resource "azurerm_app_service" "example" {
     scm_type       = "LocalGit"
   }
 
+
 }
