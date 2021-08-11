@@ -9,17 +9,6 @@ terraform {
 
     }
 
-  }
-
-#   backend "azurerm" {
-#     resource_group_name  = "my-jenkins-server"
-#     storage_account_name = "sttfremote"
-#     container_name       = "tfstatefiles"
-#     key                  = "terraform.tfstate"
-#  }
-
- }
-
 # Provider Block
 provider "azurerm" {
   features {}
