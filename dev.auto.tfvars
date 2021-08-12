@@ -1,4 +1,4 @@
-business_unit          = "it"
+business_unit          = "HR"
 environment            = "dev"
 resoure_group_name     = "myrg"
 resoure_group_location = "eastus"
